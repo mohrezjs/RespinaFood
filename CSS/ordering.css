@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inconsolata:wght@300&family=Inter:wght@500;800&family=M+PLUS+1p:wght@800&family=Oswald:wght@600&family=Outfit:wght@300;400;600&display=swap");
+
+.reserve {
+    grid-column: span 6;
+}
+
+.reserve-section {
+    background-image: url("../Pictures/story4.jpg");
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50px repeat(4, 1fr) 50px;
+    padding: 55px;
+    text-align: center;
+}
+
+.right-img {
+    height: 110px;
+    margin: 0px 25px;
+    clip-path: circle(37.8% at 50% 50%);
+}
+
+.left-box {
+    grid-column: 2 /3;
+    background-color: #000000bd;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 2fr 1fr repeat(3, 0.5fr) 2fr;
+    padding-top: 15px;
+}
+
+.right-box {
+    grid-column: 3 /6;
+    background-color: #ffffffbd;
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 2fr;
+}
+
+.parantes,
+.right-title,
+.reserve-branch {
+    color: orange;
+    font-family: "Dancing Script";
+}
+
+.ordertitle {
+    padding-top: 22px;
+}
+
+.reserv-text {
+    align-self: end;
+    padding-bottom: 12px;
+    font-family: "Dancing Script";
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1104px) {
+    .right-img {
+        height: 95px;
+        margin: 10px;
+        clip-path: circle(37.8% at 50% 50%);
+    }
+
+    .reserve-section {
+        grid-template-columns: 10px repeat(4, 1fr) 10px;
+        padding: 25px;
+    }
+
+    .reserv-text {
+        align-self: end;
+        padding-bottom: 10px;
+        font-family: "Dancing Script";
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .right-img {
+        height: 70px;
+        margin: 0px;
+        clip-path: circle(37.8% at 50% 50%);
+    }
+
+    .reserve-section {
+        grid-template-columns: 10px repeat(4, 1fr) 10px;
+        padding: 10px;
+    }
+
+    .reserv-text {
+        align-self: end;
+        padding-bottom: 5px;
+        font-family: "Dancing Script";
+        font-size: 9px;
+    }
+}
+
+/* grid-template-rows: 0.22fr 0.4fr 0.1fr 0.5fr 2fr; */

@@ -1,0 +1,59 @@
+.header {
+    background-color: #000;
+    grid-column: span 6;
+    background-image: linear-gradient(to bottom, #4d4c4c4f, #000000),
+        url("../Pictures/header.jpg");
+    background-size: cover;
+    color: #fff;
+    font-size: 30px;
+    display: grid;
+    grid-template-rows: repeat(1, min-content);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.header-text {
+    color: orange;
+}
+
+.header-btn {
+    padding: 20px 30px;
+    color: #fff;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: center;
+    transition: all ease 0.4s;
+}
+
+.header-btn:hover {
+    background-color: #fff;
+    color: orange;
+    box-shadow: 4px 3px 11px orange;
+}
+
+.header-btn:active {
+    box-shadow: none;
+    color: #fff;
+    background-color: orange;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 730px) {
+    .header {
+        background-position-x: -100px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .header {
+        font-size: 20px;
+    }
+
+    .header-btn {
+        padding: 12px 15px;
+    }
+}
